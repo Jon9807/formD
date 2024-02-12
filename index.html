@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal Car Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            color: #fff;
+        }
+
+        header img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="image/logo.jpg" alt="Logo" height="100">
+        <h1>Car Profile</h1>
+    </header>
+
+    <form id="car" action="#" method="get">
+
+        <fieldset>
+            <legend>Manufacturer</legend>
+            <label for="manufacturer">Choose a Manufacturer:</label>
+            <select id="manufacturer" name="manufacturer">
+                <option value="volvo">Volvo</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Subaru">Subaru</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Mazda">Mazda</option>
+                <option value="Prosche">Prosche</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Color</legend>
+            <label for="color">Choose a Color:</label>
+            <input type="color" id="color" name="color" value="#000000">
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Drive Options</legend>
+            <label><input type="checkbox" name="driveOptions" value="4_wheel"> 4 Wheel Drive</label>
+            <label><input type="checkbox" name="driveOptions" value="all_wheel"> All-Wheel Drive</label>
+            <label><input type="checkbox" name="driveOptions" value="front_wheel"> Front-Wheel Drive</label>
+            <label><input type="checkbox" name="driveOptions" value="rear_wheel"> Rear-Wheel Drive</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>License</legend>
+            <label for="license">License Plate:</label>
+            <input type="text" id="license" name="license" placeholder="Enter License Plate" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Advanced Features</legend>
+            <label><input type="checkbox" name="advancedFeatures" value="Seat_warmer"> Seat Warmer</label>
+            <label><input type="checkbox" name="advancedFeatures" value="steering_wheel_warmer"> Parking Assist</label>
+            <label><input type="checkbox" name="advancedFeatures" value="autopilot"> Autopilot</label>
+            <label><input type="checkbox" name="advancedFeatures" value="Back_camera"> Back Camera</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Safety Features</legend>
+            <label><input type="checkbox" name="safetyFeatures" value="collision_Avoidance"> Collision Avoidance System</label>
+            <label><input type="checkbox" name="safetyFeatures" value="blind_Spot_Monitoring"> Blind Spot Monitoring</label>
+            <label><input type="checkbox" name="safetyFeatures" value="adaptive_Cruise_Control"> Adaptive Cruise Control</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Comments</legend>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments"></textarea>
+        </fieldset>
+
+        <input id="process" type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
